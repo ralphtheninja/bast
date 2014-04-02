@@ -1,0 +1,17 @@
+{
+  "name": "bast",
+  "version": "0.0.1",
+  "description": "bitcoin address scraping tool",
+  "bin": { "bast": "./index.js" },
+  "main": "index.js",
+  "keywords": [
+    "scrape",
+    "bitcoin",
+    "address"
+  ],
+  "author": "lms <ralphtheninja@riseup.net>",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "~0.10.2"
+  }
+}
