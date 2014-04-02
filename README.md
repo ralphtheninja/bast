@@ -10,7 +10,7 @@ $ npm install -g bast
 
 # Usage
 
-Simple tool based on jsdom. Takes two arguments on command line; a url and a selector string, e.g.:
+Simple tool based on jsdom. Takes two arguments on command line; a url and a selector string and outputs bitcoin addresses to stdout. For example:
 
 ```
 $ bast 'http://bitkoinmama.com/2014/03/07/pierwsza-bitmonetka-milibits-giveaway/#comments'
