@@ -4,6 +4,7 @@ var jsdom = require('jsdom')
 function scrape(opts, cb) {
   // TODO this could be done much better and needs to be more generic
   var regex = opts.regex || /(^|\s+)(1[1-9A-HJ-NP-Za-km-z]{26,33})/g
+  var group = opts.group || 2
 
   jsdom.env({
 
@@ -17,7 +18,7 @@ function scrape(opts, cb) {
       for (var i = 0; i < length; ++i) {
         var match = regex.exec(list[i].innerHTML)
         if (match) {
-          var address = match[2]
+          var address = match[group]
           if (typeof address == 'string') addresses[address] = address
         }
       }
