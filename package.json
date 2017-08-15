@@ -16,6 +16,6 @@
   "author": "lms <ralphtheninja@riseup.net>",
   "license": "MIT",
   "dependencies": {
-    "jsdom": "~0.10.2"
+    "jsdom": "~11.1.0"
   }
 }
