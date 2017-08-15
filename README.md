@@ -1,5 +1,7 @@
 # Bast
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ralphtheninja/bast.svg)](https://greenkeeper.io/)
+
 Bitcoin Address Scraping Tool
 
 # Install
