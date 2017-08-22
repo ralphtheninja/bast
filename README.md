@@ -1,16 +1,17 @@
-# Bast
+# bast
 
+> Bitcoin Address Scraping Tool
+
+[![Build Status](https://travis-ci.org/ralphtheninja/bast.svg?branch=master)](https://travis-ci.org/ralphtheninja/bast)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ralphtheninja/bast.svg)](https://greenkeeper.io/)
 
-Bitcoin Address Scraping Tool
-
-# Install
+## Install
 
 ```
 $ npm install -g bast
 ```
 
-# Usage
+## Usage
 
 Simple tool based on jsdom. Takes two arguments on command line; a url and a selector string and outputs bitcoin addresses to stdout. For example:
 
@@ -32,6 +33,6 @@ Gives the following output:
 1L47E1wYYdvw2PE9a2D33NPxTYaSAXLaER
 ```
 
-# License
+## License
 
 MIT
