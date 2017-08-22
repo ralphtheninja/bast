@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git://github.com/ralphtheninja/bast.git"
   },
+  "scripts": {
+    "test": "standard"
+  },
   "keywords": [
     "scrape",
     "bitcoin",
@@ -19,5 +22,8 @@
   "license": "MIT",
   "dependencies": {
     "jsdom": "~11.1.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }

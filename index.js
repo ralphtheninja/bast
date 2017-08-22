@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var jsdom = require('jsdom')
 
-function scrape(opts, cb) {
+function scrape (opts, cb) {
   // TODO this could be done much better and needs to be more generic
   var regex = opts.regex || /(^|\s+)(1[1-9A-HJ-NP-Za-km-z]{26,33})/g
   var group = opts.group || 2
@@ -19,14 +19,13 @@ function scrape(opts, cb) {
         var match = regex.exec(list[i].innerHTML)
         if (match) {
           var address = match[group]
-          if (typeof address == 'string') addresses[address] = address
+          if (typeof address === 'string') addresses[address] = address
         }
       }
       cb(null, Object.keys(addresses))
     }
 
   })
-
 }
 
 if (!module.parent) {
@@ -41,4 +40,3 @@ if (!module.parent) {
 }
 
 module.exports = scrape
-
